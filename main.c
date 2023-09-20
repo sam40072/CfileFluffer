@@ -6,17 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void FisherYates(int* player, int n)
-{
-    int i, j, tmp; // create local variables to hold values for shuffle
-    srand(time(NULL));
-    for (i = n - 1; i > 0; i--) { // for loop to shuffle
-        j = rand() % (i + 1); //randomise j for shuffle with Fisher Yates
-        tmp = player[j];
-        player[j] = player[i];
-        player[i] = tmp;
-    }
-}
+//I don't need fisherYates algorithm anymore as the new random is better
 
 char* randomString(int length)
 {
